@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,22 +10,24 @@
     <div class="container">
        <h3>Cadastro de Clientes</h3>
        <hr>
-        <form action="" method="post">
+        <form action="gravar.php" method="post">
             <label>Nome: </label>
-            <input type="text" class="form-control col-md-4">
+            <input type="text" name="nome" class="form-control col-md-4">
             <label>E-mail: </label>
-            <input type="email" class="form-control col-md-4">
+            <input type="email" name="email" class="form-control col-md-4">
             <label>Estado Civil</label>
-            <select class="form-control col-md-4">
-                <option value="">- Escolha -</option>
+            <select name="estadocivil" class="form-control col-md-4">
+                <option value="" disabled selected>- Escolha -</option> <!-- Disabled não permite que 'escolha seja selecionado' / Selected faz com que 'escolha' apareça como 'opção' na lista-->
                 <option value="Solteiro">Solteiro(a)</option>
                 <option value="Casado">Casado(a)</option>
                 <option value="Divorciado">Divorciado(a)</option>
                 <option value="Viúvo">Viúvo(a)</option>
             </select><br>
             <label>Sexo: </label>
-            <input type="radio" value="M"> Masculino
-            <input type="radio" value="F"> Feminino
+            <input type="radio" name="sexo" value="M"> Masculino
+            <input type="radio" name="sexo" value="F"> Feminino
+            <br>
+            <input type="submit" value="Enviar" class="btn bnt-sucess">
         </form>
     </div>
 </body>

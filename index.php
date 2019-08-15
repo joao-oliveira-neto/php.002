@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <title>WELL.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Well.com</title>
 </head>
-
-
 <body>
-  <div class="card card-body bg-dark">
-        <h3 class="text-white">Projeto de Controle de Clientes</h3>
-        <p class="text-white">
-            Sistema desenvolvido em PHP e MySQL
-        </p>
-    </div>
-    <br>
+    <?php include 'header.php'; ?>
     <div class="container">
         <h2>Painel do Sistema</h2>
         <hr>
@@ -26,7 +18,5 @@
             </ul>
         </nav>
     </div>
-   
-    
 </body>
 </html>
